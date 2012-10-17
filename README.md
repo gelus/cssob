@@ -1,7 +1,7 @@
 cssob
 =====
 
-A JavaScript Inject that reads all your linked and inline stylesheets and tuns them into a readable, mutable object.
+A JavaScript Inject that reads all your linked and inline stylesheets and turns them into a readable, mutable object.
 
 <h2>installation</h2>
 
