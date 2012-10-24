@@ -6,7 +6,7 @@ A JavaScript Inject that reads all your linked and inline stylesheets and turns 
 <h2>installation</h2>
 
 Insert script after your CSS links.
-Script will compose an object constucted of all your defined rules.
+Script will compose a global object constucted of all your defined rules.
 
 <h2>Use:</h2>
 
@@ -22,16 +22,17 @@ Script will compose an object constucted of all your defined rules.
 </pre>
 
 <h3>Additional API</h3>
+<h4>listProps()</h4>
+Returns an array with all the available css properties and methods from the queried cssob object.
+<pre>cssob['string cssSelector'].listProps();
 
-<pre>css.listProps(string cssSelector);</pre>
-Returns an array with all the set css properties of the matching selector
-EXAMPLE:  
-<pre>
+Example
+________________________________________________
 &lt;style&gt;
   .clear{clear: both; height: 0; display: block}
 &lt;/style&gt;
 &lt;sciprt&gt;
-  var clearClassProperties = cssob.listProps('.clear');
-  console.log(clearClassProperties); //logs ["clear", "height", "display"]
+  var clearClassProperties = cssob['.clear'].listProps();
+  console.log(clearClassProperties); //logs ["clear", "height", "display"] amung other available operations (some browser specific)
 &lt;/script&gt;
 </pre>
