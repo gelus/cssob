@@ -10,7 +10,7 @@ Script will compose a global object constucted of all your defined rules.
 
 <h2>Use:</h2>
 
-<h3>Retrive information</h3>
+<h3>Retrieve information</h3>
 
 <pre>console.log(cssob[cssSelector].height); 
     //logs hight set by provided asosiated CSS selector rule.</pre>
